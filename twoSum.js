@@ -60,3 +60,32 @@ const twoSumIndex = (target) => {
 // difference between currentValue and target to get compliment
     // .includes compliment?
         // push currentValue and compliment
+
+const twoSumEach = (target) => {
+    let int =[]
+    numsArr.forEach( (i) => {
+        // console.log(i)
+        let compliment = target - i
+        // console.log(compliment)
+        let complimentIndex = numsArr.indexOf(compliment)
+        // console.log(complimentIndex)
+        // numsArr.includes(compliment) ? int.push(i, numsArr[complimentIndex]) : console.log('trying again')
+        if (numsArr.includes(compliment)){
+            int.push(i, numsArr[complimentIndex])
+            return console.log(int);
+        }
+    }
+    )
+}
+// I'm getting all matching pairs, not sure how to get just one
+// twoSumEach(9)
+
+//pseudocode for loop + Object
+// initialize empty complimentObj
+/// initialize empty complimentArr
+// for loop to go over the array
+    // get compliment
+    // if complimentsObj has this compliment.. 
+        // push value and compliment into complimentsArr
+    // otherwise.. set complimentsObj[val] = i 
+// return complimentsArr
