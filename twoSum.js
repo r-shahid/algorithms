@@ -35,7 +35,7 @@ const twoSum = (target) => {
 		//console.log(int); BY CONSOLE LOGGING HERE, THE FUNCTION KEEPS LOOKING FOR OTHER RESULTS. WE ONLY WANT ONE, SO I COMMENTED THIS OUT AND PUT THE RETURN STATEMENT ABOVE, THANKS TO SAMPREET'S SUGGESTION   
 	}
 };
-// twoSum(5);
+twoSum(5);
 
 //pseudocode for loop + indexOf()
 // a for loop to traverse the array
@@ -89,3 +89,6 @@ const twoSumEach = (target) => {
         // push value and compliment into complimentsArr
     // otherwise.. set complimentsObj[val] = i 
 // return complimentsArr
+
+let compObj = {}
+let compArr = []
