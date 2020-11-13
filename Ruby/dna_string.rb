@@ -3,9 +3,6 @@
 # Base pairs are a pair of AT and CG. Match the missing element to the provided character. Return the provided character as the first element in nested array.
 
 def dna_string(string)
-  # loop through each letter
-  # each letter gets put in it's own array with its pair
-  # print all the arrays
   letters = string.upcase.split('')
   return_arr = []
   letters.each do |i|
